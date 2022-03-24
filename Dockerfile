@@ -29,7 +29,7 @@ RUN set -ex; \
 
 WORKDIR /var/www/html
 COPY . ./
-RUN chmod -R 755 /var/www/html
+RUN chmod -R 555 /var/www/html
 RUN sed -i 's/80/${PORT}/g' /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf
 RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 RUN cd /tmp && curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer
