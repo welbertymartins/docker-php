@@ -1,0 +1,15 @@
+{
+    "name": "welberty.martins/docker-php",
+    "autoload": {
+        "psr-4": {
+            "WelbertyMartins\\DockerPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "welbertymartins",
+            "email": "38479002+welbertymartins@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}

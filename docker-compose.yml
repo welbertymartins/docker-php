@@ -1,0 +1,5 @@
+simple_php_app:
+  env_file: local.env
+  build: .
+  ports:
+    - "8089:80"
